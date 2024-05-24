@@ -30,6 +30,7 @@ const CourseTags: FC<ICourseTags> = ({ tags, handleTagClick }) => {
 						selectedTag === tag ? 'courseTagsItem--active' : ' courseTagsItem'
 					}`}
 					onClick={() => handleTag(tag)}
+					key={tag}
 				>
 					{tag}
 				</div>
